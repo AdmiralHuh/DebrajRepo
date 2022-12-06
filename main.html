@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example of css</title>
+    <style>
+      p {
+        color: blueviolet !important;
+      }
+    </style>
+    <!-- this is a internal css -->
+    <!-- important means it get preference always fist instead of last one  -->
+    <link rel="stylesheet" href="main.css" />
+    <!-- link of a external sheet  -->
+    <!-- last one always get preference first  -->
+    <style>
+      /* element selector */
+      p {
+        border: 2px solid black;
+      }
+      /* id selector */
+      #firstpara {
+        color: green;
+      }
+      /* class selector */
+      .bgblue {
+        color: black;
+        background-color: blue;
+      }
+      /* grouping selector */
+      footer,
+      span {
+        background-color: darkblue;
+      }
+    </style>
+    <!-- example of different type of selector -->
+  </head>
+  <body>
+    <h3>This is CSS Tutorial</h3>
+    <p style="color: red; background-color: yellow">
+      This tutorial teach you everything about html and css
+    </p>
+    <p>This tutorial teach you everything about html and css</p>
+    <span>this is a span</span>
+    <footer>this is a footer</footer>
+    <!-- this is a inline style example -->
+  </body>
+</html>
