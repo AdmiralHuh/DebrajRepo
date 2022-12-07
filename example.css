@@ -1,0 +1,40 @@
+/* css can write in 3 methods they are :
+1.Inline css: css is added to the elements directly using style arttribute
+2.Internal css: css is kept inside the head tags in <style> tags
+3.External css: css is kept sperately inside a .css style sheet     */
+/* inline css > internal css > extrenal css */
+/* !important css file > the bottom one css file > the upper one css file   */
+
+/* element selector */
+p {
+  border: 2px solid black;
+} 
+/* id selector */
+#firstpara {
+  color: green;
+}
+/* class selector */
+.bgblue {
+  color: black;
+  background-color: blue;
+}
+/* grouping selector */
+
+footer,span {
+  background-color: darkblue;
+} 
+/* example of different type of selector */
+#fonts {
+font-family:'Zen Dots';
+font-size: 10px;  /* 1/96th of an inch = pixel */
+line-height: 1em;
+font-weight: ;
+}
+/* example of different type of fonts, Zen Dots are added by google fonts, link added in the html file */
+.colour {
+  color: brown;     /* colour by name */
+  color:rgb(0,0,0); /* colour by rgb */
+  color: #16f;      /* colour by hex code */
+  color: hsl(0, 58%, 40%); /* colour by HSL */
+}
+/* example of different types of coloring methods  */

@@ -1,9 +1,0 @@
-/* css can write in 3 methods they are :
-1.Inline css: css is added to the elements directly using style arttribute
-2.Internal css: css is kept inside the head tags in <style> tags
-3.External css: css is kept sperately inside a .css style sheet     */
-/* inline css > internal css > extrenal css */
-/* !important css file > the bottom one css file > the upper one css file   */
-p {
-    color: greenyellow;
-}
