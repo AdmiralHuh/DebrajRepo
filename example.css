@@ -9,28 +9,44 @@
 p {
   border: 2px solid black;
 } 
+
 /* id selector */
 #firstpara {
   color: green;
 }
+
 /* class selector */
 .bgblue {
   color: black;
   background-color: blue;
 }
-/* grouping selector */
 
+/* grouping selector */
 footer,span {
   background-color: darkblue;
 } 
+
+/* body selector */
+body {
+  background-color: #16f;
+  }
+
+/* universal selector */
+* {
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
 /* example of different type of selector */
+
 #fonts {
 font-family:'Zen Dots';
 font-size: 10px;  /* 1/96th of an inch = pixel */
 line-height: 1em;
-font-weight: ;
+font-weight:300 ;
 }
 /* example of different type of fonts, Zen Dots are added by google fonts, link added in the html file */
+
 .colour {
   color: brown;     /* colour by name */
   color:rgb(0,0,0); /* colour by rgb */
@@ -38,3 +54,65 @@ font-weight: ;
   color: hsl(0, 58%, 40%); /* colour by HSL */
 }
 /* example of different types of coloring methods  */
+
+
+.border {
+ border-color: cadetblue;
+ border-style: solid;
+ border-radius:3px;
+}
+/* example of broder  */
+.border_in_single_line {
+  border: 10px dotted rgb(18, 20, 20);
+/* example of broder in one line  */ 
+} 
+.border_side {
+  border-top:10px dotted rgb(18, 20, 20);
+  border-bottom:10px dotted rgb(18, 20, 20);
+  border-right:10px dotted rgb(18, 20, 20);
+  border-left:10px dotted rgb(18, 20, 20);
+  border-top-left-radius:4px;
+  border-top-right-radius:4px;
+  border-bottom-left-radius:4px;
+  border-bottom-right-radius:4px;
+}
+/* example of different type of border side and it's corner radius */
+
+
+.background {
+  background-image: url('https://www.miracle.net.in/wp-content/uploads/2020/09/5-Most-Important-Considerations-For-PCB-Power-Supply-Design.jpg');
+  background-repeat: no-repeat;  /*repeat-x and repeat-y will make it repeat on x and y axis */
+  background-position: center;
+  background-position: 144px 65px;
+}
+/* example of different type of backgrouds features */
+
+
+.padding {
+padding:70px;
+padding-top:70px;
+padding-bottom:70px;
+padding-left:70px;
+padding-right:70px;
+}
+/* example of different type of padding features */
+.padding_in_one_line {
+  padding: 23px 56px 6px 78px; /* padding = top right bottom left */
+  padding: 34px 19px; /* padding: y(top/bottom) x(left/right) */ 
+}
+/* example of padding in one line  */ 
+
+
+.margin {
+margin:70px;
+margin-top:70px;
+margin-bottom:70px;
+margin-left:70px;
+margin-right:70px;
+}
+/* example of different type of margin features */
+.margin_in_one_line {
+margin: 23px 56px 6px 78px; /* margin = top right bottom left */
+margin: 34px 19px; /* margin: y(top/bottom) x(left/right) */ 
+}
+/* example of margin in one line  */ 
