@@ -23,12 +23,12 @@ p {
 
 /* grouping selector */
 footer,span {
-  background-color: darkblue;
+  background-color: rgb(63, 63, 113);
 } 
 
 /* body selector */
 body {
-  background-color: #16f;
+  background-color: rgb(211, 214, 220);
   }
 
 /* universal selector */
@@ -109,10 +109,48 @@ margin-top:70px;
 margin-bottom:70px;
 margin-left:70px;
 margin-right:70px;
-}
+} 
 /* example of different type of margin features */
 .margin_in_one_line {
 margin: 23px 56px 6px 78px; /* margin = top right bottom left */
 margin: 34px 19px; /* margin: y(top/bottom) x(left/right) */ 
 }
 /* example of margin in one line  */ 
+.float {
+  float: left;
+  float: right;
+}
+/* example of float */
+.clear {
+ clear: both;
+ clear: left;
+ clear: right;
+}
+/* example of clear */
+.btn {
+  color:rgb(33, 13, 16);
+  cursor:pointer;
+  background-color: darkgoldenrod;
+}
+/* for the btn class */
+.btn:hover{
+   color: darkgreen;
+}
+/* when hovering over the btn class where used */
+a {
+  text-decoration: none;
+}
+/* for remove the under line */
+a:hover {
+  color: blueviolet;
+  background-color: chocolate;
+}
+/* when you hover over the text the colour will be changed */
+a:visited {
+  color:rgb(64, 0, 255);
+}
+/* once you visited the link the colour will automatically changed */
+a:active {
+  color: darkorchid;
+}
+/* when you activate the button then colour will be changed  */
