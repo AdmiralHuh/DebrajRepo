@@ -154,3 +154,31 @@ a:active {
   color: darkorchid;
 }
 /* when you activate the button then colour will be changed  */
+.position {
+  position: static; /* by default position is come with static */
+  position: relative; /* relative means it's compare to it's own position */
+  position: absolute; /* absolute means it's compare to it's parent position */
+  position: fixed; /* making a fixed position in the page while scrolling the page */
+  position: sticky; /* stick in a particular position in the webpage */
+  top: 56px;
+  right: 56px;
+}
+/* example of different type of positions*/
+.visibility {
+  visibility: visible;
+  visibility: hidden;
+}
+/*example of different type of visibility properties*/
+.display {
+  display: none;
+}
+/*example of different type of display properties*/
+.z-index {
+  z-index: 45;
+}
+/* which z-index value will be greater that will be shown in overlap case */
+/* z-index will work only for position absolute, relative, fixed, sticky */
+.invert {
+  filter: invert(100%);
+}
+/* invert function make your picutre inverting, means if the picture is white then it will be become dark */
