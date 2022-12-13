@@ -8,7 +8,7 @@
 /* element selector */
 p {
   border: 2px solid black;
-} 
+}
 
 /* id selector */
 #firstpara {
@@ -22,119 +22,118 @@ p {
 }
 
 /* grouping selector */
-footer,span {
+footer,
+span {
   background-color: rgb(63, 63, 113);
-} 
+}
 
 /* body selector */
 body {
   background-color: rgb(211, 214, 220);
-  }
+}
 
 /* universal selector */
 * {
   box-sizing: border-box;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
 /* example of different type of selector */
 
 #fonts {
-font-family:'Zen Dots';
-font-size: 10px;  /* 1/96th of an inch = pixel */
-line-height: 1em;
-font-weight:300 ;
+  font-family: "Zen Dots";
+  font-size: 10px; /* 1/96th of an inch = pixel */
+  line-height: 1em;
+  font-weight: 300;
 }
 /* example of different type of fonts, Zen Dots are added by google fonts, link added in the html file */
 
 .colour {
-  color: brown;     /* colour by name */
-  color:rgb(0,0,0); /* colour by rgb */
-  color: #16f;      /* colour by hex code */
+  color: brown; /* colour by name */
+  color: rgb(0, 0, 0); /* colour by rgb */
+  color: #16f; /* colour by hex code */
   color: hsl(0, 58%, 40%); /* colour by HSL */
 }
 /* example of different types of coloring methods  */
 
-
 .border {
- border-color: cadetblue;
- border-style: solid;
- border-radius:3px;
+  border-color: cadetblue;
+  border-style: solid;
+  border-radius: 3px;
 }
 /* example of broder  */
 .border_in_single_line {
   border: 10px dotted rgb(18, 20, 20);
-/* example of broder in one line  */ 
-} 
+  /* example of broder in one line  */
+}
 .border_side {
-  border-top:10px dotted rgb(18, 20, 20);
-  border-bottom:10px dotted rgb(18, 20, 20);
-  border-right:10px dotted rgb(18, 20, 20);
-  border-left:10px dotted rgb(18, 20, 20);
-  border-top-left-radius:4px;
-  border-top-right-radius:4px;
-  border-bottom-left-radius:4px;
-  border-bottom-right-radius:4px;
+  border-top: 10px dotted rgb(18, 20, 20);
+  border-bottom: 10px dotted rgb(18, 20, 20);
+  border-right: 10px dotted rgb(18, 20, 20);
+  border-left: 10px dotted rgb(18, 20, 20);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 /* example of different type of border side and it's corner radius */
 
-
 .background {
-  background-image: url('https://www.miracle.net.in/wp-content/uploads/2020/09/5-Most-Important-Considerations-For-PCB-Power-Supply-Design.jpg');
-  background-repeat: no-repeat;  /*repeat-x and repeat-y will make it repeat on x and y axis */
+  background-image: url("https://www.miracle.net.in/wp-content/uploads/2020/09/5-Most-Important-Considerations-For-PCB-Power-Supply-Design.jpg");
+  background-repeat: no-repeat; /*repeat-x and repeat-y will make it repeat on x and y axis */
   background-position: center;
   background-position: 144px 65px;
 }
 /* example of different type of backgrouds features */
 
-
 .padding {
-padding:70px;
-padding-top:70px;
-padding-bottom:70px;
-padding-left:70px;
-padding-right:70px;
+  padding: 70px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 /* example of different type of padding features */
 .padding_in_one_line {
   padding: 23px 56px 6px 78px; /* padding = top right bottom left */
-  padding: 34px 19px; /* padding: y(top/bottom) x(left/right) */ 
+  padding: 34px 19px; /* padding: y(top/bottom) x(left/right) */
 }
-/* example of padding in one line  */ 
-
+/* example of padding in one line  */
 
 .margin {
-margin:70px;
-margin-top:70px;
-margin-bottom:70px;
-margin-left:70px;
-margin-right:70px;
-} 
-/* example of different type of margin features */
-.margin_in_one_line {
-margin: 23px 56px 6px 78px; /* margin = top right bottom left */
-margin: 34px 19px; /* margin: y(top/bottom) x(left/right) */ 
+  margin: auto;
+  margin: 70px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
-/* example of margin in one line  */ 
+/* example of different type of margin features 
+margin auto function makes you center the element */
+.margin_in_one_line {
+  margin: 23px 56px 6px 78px; /* margin = top right bottom left */
+  margin: 34px 19px; /* margin: y(top/bottom) x(left/right) */
+}
+/* example of margin in one line  */
 .float {
   float: left;
   float: right;
 }
 /* example of float */
 .clear {
- clear: both;
- clear: left;
- clear: right;
+  clear: both;
+  clear: left;
+  clear: right;
 }
 /* example of clear */
 .btn {
-  color:rgb(33, 13, 16);
-  cursor:pointer;
+  color: rgb(33, 13, 16);
+  cursor: pointer;
   background-color: darkgoldenrod;
 }
 /* for the btn class */
-.btn:hover{
-   color: darkgreen;
+.btn:hover {
+  color: darkgreen;
 }
 /* when hovering over the btn class where used */
 a {
@@ -147,7 +146,7 @@ a:hover {
 }
 /* when you hover over the text the colour will be changed */
 a:visited {
-  color:rgb(64, 0, 255);
+  color: rgb(64, 0, 255);
 }
 /* once you visited the link the colour will automatically changed */
 a:active {
@@ -166,11 +165,15 @@ a:active {
 /* example of different type of positions*/
 .visibility {
   visibility: visible;
-  visibility: hidden;
+  visibility: hidden; /*Will hide it's visibility not it's space*/
 }
 /*example of different type of visibility properties*/
 .display {
-  display: none;
+  display: none; /*Will hide display with it's space*/
+  display: block;
+  display: flex;
+  display: inline;
+  display: inline-block;
 }
 /*example of different type of display properties*/
 .z-index {
@@ -182,3 +185,66 @@ a:active {
   filter: invert(100%);
 }
 /* invert function make your picutre inverting, means if the picture is white then it will be become dark */
+.flex {
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+  flex-direction: column-reverse;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;  /* flex wrap function make the item in wrap mode */
+  flex-wrap: nowrap;
+  flex-wrap: wrap-reverse;
+  flex-flow: row-reverse wrap; /* flex flow used for flex dirction and flex wrap works in one line */
+  flex-grow: 3; /* this function will makes the item grow when you grab it */ /* flex grow and flex shrink can't accept negative numbers */
+  flex-shrink: 2;
+  flex-basis: 120px; /* when flex direction is row then flex basis controll width */
+  flex-basis: 120px; /* when flex direction is column then flex basis controll height */
+  flex: 2 2 320px; /* flex is used for flex-grow flex-shrink flex-basis in one line */
+}
+/* example of different type of flex properties 
+by default flex direction come with row*/
+.justify_content {
+  justify-content: center; /* element goes center of the page */
+  justify-content: space-between; /* elements get equal space between each other */
+  justify-content: space-evenly; /* elements get equal space with start and end in page*/
+  justify-content: space-around; /* elements get similar space in left and right */
+}
+/* example of different type of justify content, will justify the content in horizontal direction */
+.align_items {
+  align-items: center; /* align all text vertically center */
+  align-items: flex-end; /* all items shift to the bottom */
+  align-items: flex-start; /* all items shift to the top */
+  align-items: stretch; /* all items shift to vertically stretch */
+}
+/* example of different types of align_items properties, will justify the content in vertical direction */    
+.align_self {
+  align-self: center; /* align text vertically center */
+  align-self: flex-end; /* items shift to the bottom */
+  align-self: flex-start; /* items shift to the top */
+}
+/* example of different types of align_self properties, will justify the individual content in vertical direction */   
+/* align-items — controls alignment of all items on the cross axis. 
+align-self — controls alignment of an individual flex item on the cross axis. */
+.order {
+  order: 1; /* order number will determine the position of the context in a flex,
+  higher the order will later show in container */
+}
+/* example of order, order function will work only after intialize of flex in display mode */
+
+/* What is a reponsive design ??
+  ans:-*Endless new resolutions and devices are difficult to support separately for a web developer
+       *Responsive design is a way for a web developer to make his website adapt to all the devices and resolutions 
+       *Responsive deisgn is a necessitty and not a luxury anymore! */
+.em{
+  font-size: 10em; /* em unit use for multiple of it's parent element unit, it's used for making a responsive website */
+  padding: 3em; /* in this case the padding size will be 10 times of it,s current value, because it's multiply with it's 
+  parent value upper one */
+}
+.rem {
+  font-size: 10rem; /* rem unit use for multiple of it's html element unit, it's also used for making a responsive website */
+}
+.view_port {
+  height: 100vh; /* full form of vh = view port height */
+  width: 100vw; /* full form of vw = view port width */
+}
+/* example of different types of viewport properties, view port is used for making the web page responsive */
