@@ -15,14 +15,60 @@ div p {
   color: yellow;
   font-weight: bold;
 }
-
-/* all paragraph inside of li of a div selectors */
-div li p {
-  color: yellow;
+/* pseudo selectors */
+/* all paragraph inside of a direct div selectors */
+div > p {
+  color: blue;
   font-weight: bold;
 }
-
+/* pseudo selectors */
+/* all paragraph after of a div selectors */
+div + p {
+  color: green;
+  font-weight: bold;
+}
+/* pseudo selectors */
+/* all paragraph inside of li of a div selectors */
+div li p {
+  color: red;
+  font-weight: bold;
+}
+/* pseudo selectors */
 /* id selector */
+input[type='text'] {
+  padding: 56px;
+  margin: 45px;
+}
+/* pseudo selectors */
+/* for selection of text attributes of the input  */
+a[target='_self'] {
+  color: pink;
+}
+/* pseudo selectors */
+/* selection of target attributes of a <a> tag */
+li:nth-child(3) {
+  color: cyan;
+}
+/* it will change the colour of 3rd item of the list  */
+/* example of nth-child selector */
+
+li:nth-child(2n+0) {
+  color: violet;
+}
+/* it will change every 2nd item of the list  */
+
+li:nth-child(3n+3) {
+  color:darkgreen;
+}
+/* it will change every 3rd item of the list  */
+li:nth-child(odd) {
+  color: crimson;
+}
+/* it will change every odd items of the list */
+li:nth-child(even) {
+  color: darkkhaki;
+}
+/* it will change every even items of the list */
 #firstpara {
   color: green;
 }
