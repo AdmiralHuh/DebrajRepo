@@ -10,6 +10,18 @@ p {
   border: 2px solid black;
 }
 
+/* all paragraph inside of a div selectors */
+div p {
+  color: yellow;
+  font-weight: bold;
+}
+
+/* all paragraph inside of li of a div selectors */
+div li p {
+  color: yellow;
+  font-weight: bold;
+}
+
 /* id selector */
 #firstpara {
   color: green;
@@ -186,7 +198,7 @@ a:active {
 }
 /* invert function make your picutre inverting, means if the picture is white then it will be become dark */
 .flex {
-  display: flex;
+  display: flex; /* once you display properties set to flex then below functions are workable */
   flex-direction: column;
   flex-direction: row;
   flex-direction: column-reverse;
@@ -248,3 +260,14 @@ align-self — controls alignment of an individual flex item on the cross axis. 
   width: 100vw; /* full form of vw = view port width */
 }
 /* example of different types of viewport properties, view port is used for making the web page responsive */
+@media only screen and (max-width:500px){
+  #box-1{
+    display: block;
+  }
+}
+@media only screen and (min-width:300px) and (max-width:500px){
+  #box-1{
+    display: block;
+  }
+}
+/* example of different type of media queries  */
