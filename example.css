@@ -39,6 +39,14 @@ input[type='text'] {
   padding: 56px;
   margin: 45px;
 }
+/* after pseudo selectors */
+selector::after {
+  color: darkblue;
+}
+/* before pseudo selectors */
+selector::before {
+  color: lightcoral;
+}
 /* pseudo selectors */
 /* for selection of text attributes of the input  */
 a[target='_self'] {
@@ -51,7 +59,6 @@ li:nth-child(3) {
 }
 /* it will change the colour of 3rd item of the list  */
 /* example of nth-child selector */
-
 li:nth-child(2n+0) {
   color: violet;
 }
@@ -72,24 +79,20 @@ li:nth-child(even) {
 #firstpara {
   color: green;
 }
-
 /* class selector */
 .bgblue {
   color: black;
   background-color: blue;
 }
-
 /* grouping selector */
 footer,
 span {
   background-color: rgb(63, 63, 113);
 }
-
 /* body selector */
 body {
   background-color: rgb(211, 214, 220);
 }
-
 /* universal selector */
 * {
   box-sizing: border-box;
@@ -97,7 +100,6 @@ body {
   margin: 0;
 }
 /* example of different type of selector */
-
 #fonts {
   font-family: "Zen Dots";
   font-size: 10px; /* 1/96th of an inch = pixel */
@@ -105,7 +107,6 @@ body {
   font-weight: 300;
 }
 /* example of different type of fonts, Zen Dots are added by google fonts, link added in the html file */
-
 .colour {
   color: brown; /* colour by name */
   color: rgb(0, 0, 0); /* colour by rgb */
@@ -113,7 +114,6 @@ body {
   color: hsl(0, 58%, 40%); /* colour by HSL */
 }
 /* example of different types of coloring methods  */
-
 .border {
   border-color: cadetblue;
   border-style: solid;
@@ -135,7 +135,6 @@ body {
   border-bottom-right-radius: 4px;
 }
 /* example of different type of border side and it's corner radius */
-
 .background {
   background-image: url("https://www.miracle.net.in/wp-content/uploads/2020/09/5-Most-Important-Considerations-For-PCB-Power-Supply-Design.jpg");
   background-repeat: no-repeat; /*repeat-x and repeat-y will make it repeat on x and y axis */
@@ -143,7 +142,6 @@ body {
   background-position: 144px 65px;
 }
 /* example of different type of backgrouds features */
-
 .padding {
   padding: 70px;
   padding-top: 70px;
@@ -317,3 +315,95 @@ align-self — controls alignment of an individual flex item on the cross axis. 
   }
 }
 /* example of different type of media queries  */
+.opacity {
+opacity:0.5;
+}
+/* this function will be control the visibility  */
+.box_shadow {
+  box-shadow: 10px 13px black; /* lenth width colour */ 
+  box-shadow: -10px -13px black; /* lenth width colour */ /* that will be work in oposite direction */
+  box-shadow: 10px 13px 10px green; /* lenth width blur-radius colour */
+  box-shadow: -10px -13px 10px green; /* lenth width blur-radius colour */ /* that will be work in oposite direction */
+  box-shadow: 10px 13px 10px 15px green; /* lenth width blur-radius spread-radius colour */
+  box-shadow: inset 10px 13px blue; /* this function will be make shadow inside the box */
+  box-shadow: 10px 13px green, 10px 13px red;
+}
+/* example of box_shadow */
+.text_shadow {
+  text-shadow: 1px 2px white; /* lenth width colour */
+  text-shadow: -1px -2px white; /* lenth width colour */ /* that will be work in oposite direction */
+  text-shadow: 1px 2px 3px white; /* lenth width blur-radius colour */ 
+}
+/* example of text_shadow */
+.var {
+  --box-color: blue; /* variable start with -- */
+  background-color: var(--box-color); /* for using the variable must use var() */
+}
+/* but this is a local variable  */
+/* example of variables in css */
+  :root {
+    --box-global-color: rgb(15, 100, 28);
+  }
+  /* example of a global variable  */
+.animation {
+  animation-name: Debraj1;
+  animation-name: Debraj2;
+  animation-duration: 2;
+  animation-iteration-count: 3;
+  animation-iteration-count: infinite; /* for infinite times iteration count of the item */
+  animation-fill-mode: forwards; /* for animation goes forward and stay there */
+  animation-fill-mode:backwards; /* for animation goes backward and stay there */
+  animation-fill-mode: alternate; /* for animation goes forward and return back it's place */
+  animation-timing-function: ease-in; /* for this case start slow but end fast */
+  animation-timing-function: ease-out; /* for this case start fast but end slow */
+  animation-timing-function: ease-in-out; /* for this case start and end fast but working time slow */
+  animation-delay: 2s; /* for making some delay in animation */
+  animation-direction:normal; /* for moving the animation towards forward */
+  animation-direction: reverse; /* for moving the animation towards backward */
+  animation-direction: alternate; /* for moving the animation towards forward then backwards*/
+  animation: Debraj3 5s ease-out 1s 5 forwards; /* animation properties in one line */
+  /* animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode */
+}   
+@keyframes Debraj1 {
+  from {
+width: 200px;
+  }
+  to {
+width: 1400px;
+  }
+}
+/* example of how to add animation name */
+@keyframes Debraj2 {
+  0% {
+top: 0px;
+left: 0px;
+  }
+  25% {
+top: 250px;
+left: 0px;
+  }
+  75% {
+top: 250px;
+left: 250px;
+  }
+  100% {
+top: 0px;
+left: 250px;
+  }
+}
+/* example of different type of keyframes name */
+.transition {
+  transition-property: background-color;
+  transition-duration: 1s;
+  transition-delay: 2s;
+  transition-timing-function: ease-in; /* for this case start slow but end fast */
+  transition-timing-function: ease-out; /* for this case start fast but end slow */
+  transition-timing-function: ease-in-out; /* for this case start and end fast but working time slow */
+  transition: background-color 1s ease-in-out 2s; /* transition properties in one line */
+  /* transition-property transition-duration transition-timing-function transition-delay */
+  transition: all; /* transition will work on all types of properties */
+}
+.transition:hover {
+  color: blue;
+}
+/* example of transition */
