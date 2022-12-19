@@ -315,6 +315,7 @@ align-self — controls alignment of an individual flex item on the cross axis. 
   }
 }
 /* example of different type of media queries  */
+/* there is media only screen means we want to support the media in the screen */
 .opacity {
 opacity:0.5;
 }
@@ -401,9 +402,32 @@ left: 250px;
   transition-timing-function: ease-in-out; /* for this case start and end fast but working time slow */
   transition: background-color 1s ease-in-out 2s; /* transition properties in one line */
   /* transition-property transition-duration transition-timing-function transition-delay */
-  transition: all; /* transition will work on all types of properties */
+  transition: all; /* transition will work on all types of properties, like height, weight, width, font-size */
 }
 .transition:hover {
   color: blue;
 }
 /* example of transition */
+.transform {
+  transform: rotate(45deg); /* rotate item */
+  transform: skew(40deg); /* skew item */
+  transform: scale(3); /* scaling the item */
+  transform: translateX(123); /* shifting across x */
+  transform: translateY(123); /* shifting across y */
+  transform: translate(123px, 123px); /* shifting x and y in one line */
+}
+/* example of transform */
+.grid {
+  display: grid; /* to make a grid type layout first chose display type grid */
+  grid-template-columns: 300px 100px 100px; /* there is 3 column which have width of those values accordingly */
+  grid-template-columns: 300px auto 100px; /* there is 3 column where 2 of them defined value of width and the middle one will take space 
+  automatic it's size wise  */
+  grid-template-columns: 1fr 4fr 1fr; /* here the screen hase 6 equal part, so 1fr = 1/6th of the screen, full form of fr unit is fraction */
+  grid-template-columns: repeat(12,auto); /* for repeating of 12 number of times columns the size will be auto */
+  grid-gap: 2rem;
+  grid-template-rows: 1fr 1fr 2fr ; /* there is 3 row which have lenth of those values accordingly */
+  /* if there is 10 row, then the first 3 will get upper value accodingly but for rest of the rows needs a value that will be setting up by
+  below function syntax*/
+  grid-auto-rows: 2fr;
+}
+/* example of grid */
