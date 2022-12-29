@@ -76,6 +76,10 @@ li:nth-child(even) {
   color: darkkhaki;
 }
 /* it will change every even items of the list */
+.box:first-child{
+  color: #16f;
+}
+/* for selecting first child of the box class */
 #firstpara {
   color: green;
 }
@@ -425,9 +429,21 @@ left: 250px;
   grid-template-columns: 1fr 4fr 1fr; /* here the screen hase 6 equal part, so 1fr = 1/6th of the screen, full form of fr unit is fraction */
   grid-template-columns: repeat(12,auto); /* for repeating of 12 number of times columns the size will be auto */
   grid-gap: 2rem;
+  grid-column-gap: 2rem;
+  grid-gap: 2rem;
   grid-template-rows: 1fr 1fr 2fr ; /* there is 3 row which have lenth of those values accordingly */
   /* if there is 10 row, then the first 3 will get upper value accodingly but for rest of the rows needs a value that will be setting up by
   below function syntax*/
   grid-auto-rows: 2fr;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));/* this function used for making responsive website */ /* the columns will be set in automatic manner and the mini*/
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column: 1 / span 3 ;  /* short hand for grid column */
+  grid-row: 1 / span 3 ;  /* short hand for grid row */
+  grid-area: navbar;
+  grid-area: section;
+  grid-area: aside;
 }
 /* example of grid */
